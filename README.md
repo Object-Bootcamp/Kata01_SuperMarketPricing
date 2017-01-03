@@ -6,8 +6,3 @@
 
 - As a user, I should be charged for products as per quantity I will be purchasing 
 
-
-- As a supermarket owner,
-    - I should be able to enter product amount with offer(3 for 1 dollar)
-    - I should be able to enter scheme(buy two get one free)
-    

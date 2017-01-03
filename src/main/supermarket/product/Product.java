@@ -14,4 +14,8 @@ public abstract class Product {
     public boolean isProduct(String productName) {
         return this.name == productName;
     }
+
+    public String getName() {
+        return name;
+    }
 }

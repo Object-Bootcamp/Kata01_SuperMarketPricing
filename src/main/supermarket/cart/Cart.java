@@ -9,11 +9,20 @@ public abstract class Cart {
         this.cartItems =  new ArrayList<>();
     }
 
-    public abstract double total();
+    public double total(){
+        double total = 0;
+        for (CartItem cartItem : this.cartItems)
+            total += cartItem.total();
+        return total;
+    }
 
     public ArrayList<CartItem> cartItems() {
         return cartItems;
     }
 
     public abstract void add(CartItem cartItem);
+
+    public int getCartCount() {
+        return this.cartItems.size();
+    }
 }

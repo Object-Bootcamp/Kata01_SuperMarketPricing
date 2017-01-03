@@ -9,7 +9,4 @@ public class ShoppingCartItem extends CartItem{
         this.quantity = quantity;
     }
 
-    public double total() {
-        return product.price() * quantity;
-    }
 }

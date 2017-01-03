@@ -21,11 +21,14 @@ public class ShoppingCartTest {
     @Test
     public void totalPriceShouldConsiderScheme() {
         ShoppingCart shoppingCart = new ShoppingCart();
-        shoppingCart.add(new ShoppingCartItem(banana, 2));
-        shoppingCart.add(new ShoppingCartItem(soap, 3));
+        shoppingCart.add(new ShoppingCartItem(banana, 4));
+//        shoppingCart.add(new ShoppingCartItem(soap, 3));
 
         Receipt receipt = new Receipt(shoppingCart);
-        assertThat(receipt.total(), is(80.00));
-//        assertThat(receipt.discountedPrice(), is(80.00));
+        assertThat(receipt.total(), is(40.00));
+        assertThat(receipt.discountedPrice(), is(40.00));
+        assertThat(receipt.discountCartQuantity(), is(2));
+        assertThat(receipt.shoppingCartQuantity(), is(1));
     }
+
 }
