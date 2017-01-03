@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing.iml" filepath="$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing_main.iml" group="Kata01-SupermarketPricing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kata01-SupermarketPricing_test.iml" group="Kata01-SupermarketPricing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SuperMarketPricing.iml" filepath="$PROJECT_DIR$/.idea/modules/SuperMarketPricing.iml" />
+    </modules>
+  </component>
+</project>
