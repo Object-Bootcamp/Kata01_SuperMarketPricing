@@ -17,8 +17,8 @@ public class QuantityScheme extends Scheme {
     @Override
     public ArrayList<DiscountCartItem> apply(ShoppingCartItem shoppingCartItem) {
         ArrayList<DiscountCartItem> discountCartItems = new ArrayList<>();
-        DiscountProduct discountProduct = ProductFactory.getDiscountProductFromShoppingProduct(shoppingCartItem.getProduct());
-        DiscountProduct freeProduct = ProductFactory.getFreeProduct(shoppingCartItem.getProduct());
+        DiscountProduct discountProduct = ProductFactory.createDiscountProductFromShoppingProduct(shoppingCartItem.getProduct());
+        DiscountProduct freeProduct = ProductFactory.createFreeProduct(shoppingCartItem.getProduct());
 
         discountCartItems.add(new DiscountCartItem(discountProduct, shoppingCartItem.getQuantity()));
         discountCartItems.add(new DiscountCartItem(freeProduct, shoppingCartItem.getQuantity() / 2));

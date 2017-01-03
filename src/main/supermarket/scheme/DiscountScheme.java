@@ -10,11 +10,15 @@ import java.util.ArrayList;
 public class DiscountScheme extends Scheme {
     @Override
     public boolean isApplicable(ShoppingCartItem shoppingCartItem) {
-        return shoppingCartItem.getQuantity() >=2 && shoppingCartItem.isProduct("Banana");
+        return shoppingCartItem.getQuantity() >=3 && shoppingCartItem.isProduct("Soap");
     }
 
     @Override
     public ArrayList<DiscountCartItem> apply(ShoppingCartItem shoppingCartItem) {
-        return null;
+        ArrayList<DiscountCartItem> discountCartItems = new ArrayList<>();
+
+//        Discount is on 3 quantity.
+//        DiscountProduct discountProduct = ProductFactory.createDiscountProductWithPrice(shoppingCartItem.getProduct(), );
+        return discountCartItems;
     }
 }
